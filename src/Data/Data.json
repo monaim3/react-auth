@@ -1,0 +1,21 @@
+[{
+    "id": 1,
+    "name": "Bike",
+    "gender": "Male",
+    "img": "https://i.ibb.co/bQV0SdM/Frame.png"
+  }, {
+    "id": 2,
+    "name": "Car",
+    "gender": "Female",
+    "img": "https://i.ibb.co/zsDXtVz/Frame-2.png"
+  }, {
+    "id": 3,
+    "name": "Bus",
+    "gender": "Female",
+    "img": "https://i.ibb.co/fStvCtV/Frame-1.png"
+  }, {
+    "id": 4,
+    "name": "Train",
+    "gender": "Genderqueer",
+    "img": "https://i.ibb.co/BCRVHVn/Group.png"
+  }]
