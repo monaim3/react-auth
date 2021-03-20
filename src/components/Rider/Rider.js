@@ -10,7 +10,7 @@ const Rider = ({ rider }) => {
     return (
         <div className="mt-2 ml-2 rider-card">
             <div className="card" onClick={() => handleRider(rider.riderType)} style={{ width: '15rem' }}>
-                <img  className="card-img-top p-5" src={rider.imgUrl} alt="Card image cap" />
+                <img  className="card-img-top p-5" src={rider.imgUrl} alt="Card image" />
                 <div className="card-body">
                     <h3 className="text-center rider-name">{rider.title}</h3>
                 </div>

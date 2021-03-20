@@ -11,16 +11,18 @@ import Login from "./components/Login/Login";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Contact from "./components/Contact/Contact";
 import Blog from "./components/Blog/Blog";
-import Destination from "./components/Destination/Destination";
-import Book from "./components/Book/Book";
-// import NotFound from "./NotFound/NotFound";
+import Destination from "./components/Destination/Destination"
 
-export const UserContext = createContext();
+
+
+
+export const UserContext =createContext()
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+     
       <Router>
         <Header />
         <Switch>
@@ -30,11 +32,9 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          {/* <PrivateRoute path="/book/:riderType">
-            <Book/>
-          </PrivateRoute> */}
+         
           <PrivateRoute path="/destination/:riderType">
-            <Destination />
+         <Destination></Destination>
           </PrivateRoute>
           <Route exact path="/">
             <Home />
@@ -45,9 +45,7 @@ function App() {
           <Route path="/blog">
             <Blog />
           </Route>
-          {/* <Route path="*">
-            <NotFound/>
-          </Route> */}
+         
         </Switch>
       </Router>
     </UserContext.Provider>

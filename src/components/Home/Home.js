@@ -1,7 +1,7 @@
 import React from 'react';
 import Rider from '../Rider/Rider';
 import './Home.css';
-import backgroundImage from '../../images/background.png';
+
 
 const Home = () => {
     
@@ -29,9 +29,9 @@ const Home = () => {
     ]
 
     return (
-        // <div style={{backgroundImage:`url(${backgroundImage})`}}
+      
         <div className="container row m-5 justify-content-center">
-            {/* <h1>this is home</h1> */}
+        
             {
                 riders.map(rider=><Rider key={rider.riderType} rider={rider}></Rider>)
             }

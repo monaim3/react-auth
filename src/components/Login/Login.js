@@ -133,6 +133,9 @@ const Login = () => {
                     newUserInfo.error = '';
                     newUserInfo.success = true;
                     setUser(newUserInfo);
+                   
+                    setLoggedInUser(user);
+                    history.replace(from);
                     console.log('sign in user info', res.user);
                 })
                 .catch((error) => {
@@ -164,7 +167,7 @@ const Login = () => {
 
     return (
         <div className="container">
-            <div className="card mt-5 col-md-6" style={{ backgroundColor: 'rgb(234, 224, 215)' }}>
+            <div className="card mt-5 col-md-6" style={{ backgroundColor: 'rgb(47, 43, 43)',color:'white'}}>
                 <div className="card-body">
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
@@ -210,6 +213,7 @@ const Login = () => {
                 </div>
                 <div>
                     <button className="btn btn-primary mt-2" onClick={handleFacebookSignIn}>Continue with Facebook</button>
+                    <h2>Name:{loggedInUser.name}</h2>
                 </div>
             </div>
         </div>
